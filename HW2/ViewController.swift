@@ -63,25 +63,35 @@ class ViewController: UIViewController {
     private let sixthLabel = UILabel()
     private let sixthImage = UIImageView()
     
+    private let seventhStackView = UIStackView()
+    private let seventhLabel = UILabel()
+    private let seventhImage = UIImageView()
+    
+    private let eightStackView = UIStackView()
+    private let eightLabel = UILabel()
+    private let eightImage = UIImageView()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        stackViewSetUp()
         constraintsSetUp()
         
     }
     
-    private func constraintsSetUp() {
+    private func stackViewSetUp() {
         view.addSubview(scrollView)
         
         scrollView.addSubview(contentView)
         
         contentView.addSubview(stackView)
         
-        let stackArray = [firstStackView, secondStackView, thirdStackView, fourthStackView, fifthStackView, sixthStackView]
-        let labelArray = [firstLabel, secondLabel, thirdLabel, fourthLabel, fifthLabel, sixthLabel]
-        let imageArray = [firstImage, secondImage, thirdImage, fourthImage, fifthImage, sixthImage]
-        let labelAndImageNames = ["iCloud", "Google", "Microsoft Exchange", "yahoo!", "iCloud", "iCloud"]
-
+        let stackArray = [firstStackView, secondStackView, thirdStackView, fourthStackView, fifthStackView, sixthStackView, seventhStackView, eightStackView]
+        let labelArray = [firstLabel, secondLabel, thirdLabel, fourthLabel, fifthLabel, sixthLabel, seventhLabel, eightLabel]
+        let imageArray = [firstImage, secondImage, thirdImage, fourthImage, fifthImage, sixthImage, seventhImage, eightImage]
+        let labelAndImageNames = ["iCloud", "Google", "Microsoft Exchange", "yahoo!", "YouTube", "Github", "Microsoft Outlook", "Safari"]
         
         for i in stackArray.indices {
             stackView.addArrangedSubview(stackArray[i])
@@ -106,6 +116,10 @@ class ViewController: UIViewController {
             imageArray[i].contentMode = .scaleAspectFit
         }
         
+    }
+    
+    private func constraintsSetUp() {
+        let imageArray = [firstImage, secondImage, thirdImage, fourthImage, fifthImage, sixthImage, seventhImage, eightImage]
         
         scrollView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(60)
@@ -126,9 +140,9 @@ class ViewController: UIViewController {
         }
     }
 
-    
-
 }
+
+
 
 
 
