@@ -13,6 +13,7 @@
 		A793F4EE29D87C6C0023E745 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793F4ED29D87C6C0023E745 /* ViewController.swift */; };
 		A793F4F329D87C6D0023E745 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A793F4F229D87C6D0023E745 /* Assets.xcassets */; };
 		A793F4F629D87C6D0023E745 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A793F4F429D87C6D0023E745 /* LaunchScreen.storyboard */; };
+		A793F4FE29D891B90023E745 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793F4FD29D891B90023E745 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		A793F4F229D87C6D0023E745 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A793F4F529D87C6D0023E745 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A793F4F729D87C6D0023E745 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A793F4FD29D891B90023E745 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D9B2565B86CAAF749ECDE313 /* Pods-HW2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HW2.debug.xcconfig"; path = "Target Support Files/Pods-HW2/Pods-HW2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,14 +71,23 @@
 		A793F4E829D87C6C0023E745 /* HW2 */ = {
 			isa = PBXGroup;
 			children = (
+				A793F4FF29D891CD0023E745 /* ViewControllers */,
 				A793F4E929D87C6C0023E745 /* AppDelegate.swift */,
 				A793F4EB29D87C6C0023E745 /* SceneDelegate.swift */,
-				A793F4ED29D87C6C0023E745 /* ViewController.swift */,
 				A793F4F229D87C6D0023E745 /* Assets.xcassets */,
 				A793F4F429D87C6D0023E745 /* LaunchScreen.storyboard */,
 				A793F4F729D87C6D0023E745 /* Info.plist */,
 			);
 			path = HW2;
+			sourceTree = "<group>";
+		};
+		A793F4FF29D891CD0023E745 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A793F4FD29D891B90023E745 /* TableViewController.swift */,
+				A793F4ED29D87C6C0023E745 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		C779126A4167F647CC984131 /* Pods */ = {
@@ -205,6 +216,7 @@
 				A793F4EE29D87C6C0023E745 /* ViewController.swift in Sources */,
 				A793F4EA29D87C6C0023E745 /* AppDelegate.swift in Sources */,
 				A793F4EC29D87C6C0023E745 /* SceneDelegate.swift in Sources */,
+				A793F4FE29D891B90023E745 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
